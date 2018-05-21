@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.valtra.valtraapp.activities.MainActivity"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/icon_logout"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="30dp"
+            android:id="@+id/btn_signout"/>
+
+        <ImageView
+            android:id="@+id/img_heart"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/txtMessage"
+            android:src="@drawable/heart"/>
+
+        <TextView
+            android:id="@+id/txtMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HR!!"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/img_vibration"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_toLeftOf="@+id/txtMessageBluetooth"
+            android:src="@drawable/vibration"/>
+
+        <TextView
+            android:id="@+id/txtMessageBluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vibration!!"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/task_list"
+        android:layout_alignParentStart="true"
+        android:layout_margin="30dp"
+        android:id="@+id/btn_tasks"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingTop="40dp">
+
+        <ImageView
+            android:id="@+id/img_profilepic"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/profile"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bilal Shahid"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/img_profilepic"
+            android:id="@+id/tv_name"
+            android:textColor="@color/colorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_centerHorizontal="true"
+            android:text="Online"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/sos"
+                android:layout_below="@id/tv_status"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/btn_sos"
+                android:layout_marginTop="10dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:layout_marginTop="10dp">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

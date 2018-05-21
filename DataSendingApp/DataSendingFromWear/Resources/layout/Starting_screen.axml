@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/starting_screen_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_col">
+<!--Only one image in the strating screen-->
+    <ImageView
+        android:id="@+id/startingScreen_iv"
+        android:src="@drawable/starting_screen"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" />
+</LinearLayout>

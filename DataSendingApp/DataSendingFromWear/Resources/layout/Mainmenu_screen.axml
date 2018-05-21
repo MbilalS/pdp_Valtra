@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainmenu_screen_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_col"
+    android:rowCount="2"
+    android:columnCount="2"
+    android:padding="10px">
+    <!--Mainmenu has four buttons which all lead to different screens-->
+    <ImageButton
+        android:id="@+id/mainmenu_button1_id"
+        android:src="@drawable/mainmenu_button1"
+        android:layout_height="100px"
+        android:layout_width="100px" 
+        android:background="@null"
+        android:layout_margin="5px"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:clickable="true"/>
+    <ImageButton
+        android:id="@+id/mainmenu_button3_id"
+        android:src="@drawable/mainmenu_button3"
+        android:layout_height="100px"
+        android:layout_width="100px"
+        android:background="@null"
+        android:layout_margin="5px"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"/>
+  <ImageButton
+        android:id="@+id/mainmenu_button2_id"
+        android:src="@drawable/mainmenu_button2"
+        android:layout_height="100px"
+        android:layout_width="100px" 
+        android:background="@null"
+        android:layout_margin="5px"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"/>
+  <ImageButton
+      android:id="@+id/mainmenu_button4_id"
+      android:src="@drawable/mainmenu_button4"
+      android:layout_height="100px"
+      android:layout_width="100px" 
+      android:background="@null"
+      android:layout_margin="5px"
+      android:adjustViewBounds="true"
+      android:scaleType="centerInside"/>
+</GridLayout>

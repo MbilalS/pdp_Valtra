@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/logo_ishi"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:scaleX="0"
+        android:scaleY="0"
+        app:srcCompat="@drawable/valtra_signature" />
+
+    <TextView
+        android:id="@+id/tv_ishi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="iShi"
+        android:textColor="@color/mainColor"
+        android:textSize="30sp"
+        android:visibility="gone" />
+
+    <io.codetail.widget.RevealFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/reveal_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/img_to_animate_to_next_screen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/mainColor" />
+
+            <ImageView
+                android:id="@+id/img_myChar"
+                android:layout_width="120dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="-20dp"
+                app:srcCompat="@drawable/my_char" />
+
+            <ImageView
+                android:id="@+id/img_myChar_poor"
+                android:layout_width="100dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                app:srcCompat="@drawable/proop1" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="85dp"
+                android:layout_marginTop="-35dp">
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/chat_bubble_splashscreen"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="15dp"
+                    android:paddingTop="7dp"
+                    android:scaleX="0"
+                    android:text="                                   " />
+
+                <TextView
+                    android:id="@+id/tv_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/chat_bubble_splashscreen"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="15dp"
+                    android:paddingTop="7dp"
+                    android:scaleX="0"
+                    android:text="                                   "
+                    android:layout_below="@+id/tv"/>
+
+                <com.valtra.valtraapp.utils.TypeWriter
+                    android:id="@+id/tv_chatText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="15dp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/mainColor"/>
+
+
+                <com.valtra.valtraapp.utils.TypeWriter
+                    android:id="@+id/tv_chatText_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="15dp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/mainColor"
+                    android:layout_below="@+id/tv"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_getStarted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center|bottom"
+                    android:paddingBottom="20dp"
+                    android:text="Get Started"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+
+        </FrameLayout>
+
+    </io.codetail.widget.RevealFrameLayout>
+
+
+</FrameLayout>

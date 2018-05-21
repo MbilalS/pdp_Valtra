@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_SignUp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.valtra.valtraapp.activities.SignUp">
+
+
+    <LinearLayout
+        android:id="@+id/ll_signup_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:alpha="1"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:id="@+id/rl_signup_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:alpha="1">
+
+            <TextView
+                android:id="@+id/tv_signup_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="Valtra"
+                android:textColor="@color/colorPrimary"
+                android:textSize="50sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_signup_body"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:alpha="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:paddingEnd="30dp"
+                android:paddingStart="30dp">
+
+                <EditText
+                    android:id="@+id/et_signup_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/roundcorner_bg_primary_color"
+                    android:hint="Username"
+                    android:text="bilal"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:layout_marginTop="15dp"/>
+
+                <EditText
+                    android:id="@+id/et_signup_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/roundcorner_bg_primary_color"
+                    android:hint="Email"
+                    android:text="bilal.mian.mm@gmail.com"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:layout_below="@+id/et_signup_username"/>
+
+                <EditText
+                    android:id="@+id/et_signup_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/roundcorner_bg_primary_color"
+                    android:hint="Password"
+                    android:text="123123123"
+                    android:inputType="textWebPassword"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:layout_below="@+id/et_signup_email"/>
+
+
+                <EditText
+                    android:id="@+id/et_signup_re_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/roundcorner_bg_primary_color"
+                    android:hint="Re-enter Password"
+                    android:text="123123123"
+                    android:inputType="textWebPassword"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:layout_below="@+id/et_signup_password"/>
+
+                <Button
+                    android:id="@+id/btn_signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/roundcorner_bg_primary_color"
+                    android:text="SignUp"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:layout_below="@+id/et_signup_re_password"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@android:color/transparent"
+                    android:layout_below="@+id/btn_signup"/>
+
+
+                <TextView
+                    android:id="@+id/tv_Signup_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_signup"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="15dp"
+                    android:text="Login"
+                    android:textColor="@color/colorPrimary" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

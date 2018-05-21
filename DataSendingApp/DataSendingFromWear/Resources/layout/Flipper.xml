@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/simpleflipper"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:keepScreenOn="true">
+  
+  <include android:id="@+id/startingView"  layout="@layout/Starting_screen" />
+  <include android:id="@+id/welcomeView"  layout="@layout/Welcome_screen" />
+  <include android:id="@+id/connectingView" layout="@layout/Connecting_screen" />
+  <include android:id="@+id/connectingmobileView" layout="@layout/Connecting_mobile_screen" />
+  <include android:id="@+id/mainmenuView" layout="@layout/Mainmenu_screen" />
+
+  <include android:id="@+id/tasksView" layout="@layout/Tasks_screen" />
+  <include android:id="@+id/walkView" layout="@layout/Walk_screen" />
+  <include android:id="@+id/helpView" layout="@layout/Help_screen" />
+</ViewFlipper>

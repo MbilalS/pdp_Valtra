@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2020
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataSendingFromWear", "DataSendingFromWear\DataSendingFromWear.csproj", "{AC3CC2C6-5E89-4E88-8EB2-D4E80EB6942D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataReadingInPhone", "DataReadingInPhone\DataReadingInPhone.csproj", "{FF0BEE7A-47CB-4BAD-ABD0-35B3B71D2D32}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC3CC2C6-5E89-4E88-8EB2-D4E80EB6942D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC3CC2C6-5E89-4E88-8EB2-D4E80EB6942D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC3CC2C6-5E89-4E88-8EB2-D4E80EB6942D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AC3CC2C6-5E89-4E88-8EB2-D4E80EB6942D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC3CC2C6-5E89-4E88-8EB2-D4E80EB6942D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC3CC2C6-5E89-4E88-8EB2-D4E80EB6942D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{FF0BEE7A-47CB-4BAD-ABD0-35B3B71D2D32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF0BEE7A-47CB-4BAD-ABD0-35B3B71D2D32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF0BEE7A-47CB-4BAD-ABD0-35B3B71D2D32}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{FF0BEE7A-47CB-4BAD-ABD0-35B3B71D2D32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF0BEE7A-47CB-4BAD-ABD0-35B3B71D2D32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF0BEE7A-47CB-4BAD-ABD0-35B3B71D2D32}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C2B69EC5-B799-4697-B0EC-2E33E2442BFC}
+	EndGlobalSection
+EndGlobal

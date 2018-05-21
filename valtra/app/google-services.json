@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "460566192298",
+    "firebase_url": "https://valtra-5c843.firebaseio.com",
+    "project_id": "valtra-5c843",
+    "storage_bucket": "valtra-5c843.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:460566192298:android:ddd71c0b0af19fa4",
+        "android_client_info": {
+          "package_name": "com.valtra.valtraapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "460566192298-kbbu18sd8bcrtv0jvnlmb5jm7sh7hgu4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.valtra.valtraapp",
+            "certificate_hash": "70766b10919c3e0c4e6de21ff0f34bf25d898dd8"
+          }
+        },
+        {
+          "client_id": "460566192298-hieolng9js1mbks4q55adr8f6qu97c6c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFoBW6k7IE09ZTqdg0Y2-_wr6coOSRlf0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "460566192298-hieolng9js1mbks4q55adr8f6qu97c6c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
